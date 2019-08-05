@@ -1,6 +1,6 @@
 ﻿apiVersion: The chart API version, always "v1" (required)
-name: The name of the chart (required)
-version: A SemVer 2 version (required)
+name: webzen/testcore
+version: 1.0.0
 #kubeVersion: A SemVer range of compatible Kubernetes versions (optional)
 #description: A single-sentence description of this project (optional)
 #keywords:
