@@ -1,4 +1,4 @@
-﻿apiVersion: The chart API version, always "v1" (required)
+﻿#apiVersion: The chart API version, always "v1" (required)
 name: webzen/testcore
 version: 1.0.0
 #kubeVersion: A SemVer range of compatible Kubernetes versions (optional)
