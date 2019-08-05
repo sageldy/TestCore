@@ -1,5 +1,5 @@
 ﻿#apiVersion: The chart API version, always "v1" (required)
-name: Testcore
+name: TestCore
 version: 1.0.0
 #kubeVersion: A SemVer range of compatible Kubernetes versions (optional)
 #description: A single-sentence description of this project (optional)
