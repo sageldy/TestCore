@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ .Values.name }}-Pod
+        app: {{ .Values.name }}-pod
     spec:
       containers:
       - name: {{ .Values.name }}
@@ -26,9 +26,11 @@ spec:
           requests:
             cpu: 100m
             memory: 100Mi
-        env:
-        - name: GET_HOSTS_FROM
-          value: dns
+        ports:
+        - containerPort: 80
+        #env:
+        #- name: GET_HOSTS_FROM
+        #  value: dns
           # Using `GET_HOSTS_FROM=dns` requires your cluster to
           # provide a dns service. As of Kubernetes 1.3, DNS is a built-in
           # service launched automatically. However, if the cluster you are using
@@ -37,5 +39,4 @@ spec:
           # service's host. To do so, comment out the 'value: dns' line above, and
           # uncomment the line below:
           # value: env
-        ports:
-        - containerPort: 80
+        
