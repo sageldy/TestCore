@@ -1,4 +1,4 @@
-﻿name: testcore
-image: sageldy/testcore:5.6
-domain: f.webzen.co.kr
+﻿name: "testcore"
+image: "sageldy/testcore:5.6"
+domain: "f.webzen.co.kr"
 replicacount: 3
