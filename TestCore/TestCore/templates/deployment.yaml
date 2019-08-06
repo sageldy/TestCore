@@ -3,7 +3,6 @@ apiVersion: apps/v1
 {{- else }}
 apiVersion: apps/v1beta1
 {{- end }}
-#apiVersion: apps/v1beta1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: {{ .Values.name }}-deployment
