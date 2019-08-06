@@ -11,7 +11,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: {{ .Values.name }}
+      app: {{ .Values.name }}-pod
   replicas: {{ .Values.replicacount }}
   template:
     metadata:

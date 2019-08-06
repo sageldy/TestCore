@@ -1,3 +1,4 @@
 ﻿name: testcore
 image: sageldy:testcore
+domain: f.webzen.co.kr
 replicacount: 3

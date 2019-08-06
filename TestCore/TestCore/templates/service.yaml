@@ -12,6 +12,6 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: {{ .Values.name }}
+    app: {{ .Values.name }}-pod
   sessionAffinity: None
   type: ClusterIP
