@@ -2,9 +2,11 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+
+    string ip = Request.HttpContext.Connection.RemoteIpAddress.ToString();
 }
 
 <div class="text-center">
-    <h1 class="display-4">이제 된건가</h1>
+    <h1 class="display-4">아이피 주소는 @ip</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
